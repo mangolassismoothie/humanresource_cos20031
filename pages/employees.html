@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&display=swap" rel="stylesheet">
     <title>Human Resource</title>
     <link rel="stylesheet" href="../style/employee.css">
+    <!--boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body id="employee">
     <nav>
@@ -18,9 +20,49 @@
         </ul>
     </nav>
 
-    <!--sidebar left-->
- 
-    <p>hellu</p>
+    <!--header-->
+    <h2>Employee Information</h2>
+    <div id="employee-buttons">
+        <button id="add-employee">Add Employee</button>
+        <button id="remove-employee">Remove Employee</button>
+    </div>
 
+    <main>
+        <!--other choices-->
+        <div id="other">
+            <button>Copy</button>
+            <button>PDF</button>
+            <button>Excel</button>
+            <button>CSV</button>
+            <button>Print</button>
+        </div>
+        <!--employee list-->
+        <div>
+            <table id="employee-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>Department</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Employee rows will be added here dynamically -->
+                    <tr>
+                        <td>001</td>
+                        <td>Khanh Nguyen</td>
+                        <td>Software Engineer</td>
+                        <td>IT</td>
+                        <td>quykhanhnq53@gmail.com</td>
+                    </tr> 
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <!--bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
