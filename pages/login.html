@@ -3,28 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--header font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&display=swap" rel="stylesheet">
+    <!--body font-->
     <title>Login</title>
-    <link rel="stylesheet" href="../style/login.css"></link>
-    <script src="../script/login.js" defer></script>
+    <link rel="stylesheet" href="../style/login.css">
 </head>
-<body style="">
+<body id="login">
     <nav>
         <ul>
             <li><a href="login.html">Login</a></li>
             <li><a href="employees.html">Employees</a></li>
+        </ul>
     </nav>
     <!--once login so straight to the main page-->
-    <div>
-        <div id="login-form">
-            <form method="post">
+    
+    <div id="login-form">
+            <h2 style="text-align: center;">Login</h2> <br>
+            <form method="get" action="employees.html">
             <label for="username">Username:</label>
             <input type="text" id="username" name="username"><br><br>
             <label for="password">Password:</label>
             <input type="password" id="password" name="password"><br><br>
+            <br>
+            <button class="login-button" type="submit">Login</button>
         </form>
-        </div>
-        <button class="login-button" type="submit">Login</button>
     </div>
+  
 
 </body>
 </html>
