@@ -40,10 +40,33 @@ h2{
 }
 #employee-buttons{
     background-color: rgb(218, 223, 225);
-    padding: 10px;
+    padding: 10px 30px;
     gap: 50px;
 }
 /*employee adding*/
+.table-card{
+    width:95%;
+    margin: 16px auto;               
+    border:1px solid rgba(99,131,141,.35);
+    border-radius:12px;
+    overflow:hidden;
+    background:#fff;
+    box-shadow:0 6px 16px rgba(0,0,0,.06);
+}
+.table-toolbar{
+    display:flex; gap:8px; flex-wrap:wrap;
+    padding:10px;
+    background:#eef2f4;               
+    border-bottom:1px solid rgba(99,131,141,.25);
+}
+.table-toolbar button{
+    background:#e6eaec;
+    color:#111;
+    border:1px solid #111;
+    padding:6px 12px;
+    border-radius:6px;
+    cursor:pointer;
+}
 #add-employee {
     background-color: rgb(99, 131, 141);
     color: white;
@@ -68,8 +91,8 @@ h2{
 
 /*employee main table*/
 #employee-table {
-    width: 100%;
-    margin: 100px auto 0 auto;
+    width: 95%;
+    margin: 20px;
     border-collapse: collapse;
 }
 #employee-table thead th{
