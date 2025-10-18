@@ -46,12 +46,17 @@ h2{
 /*employee adding*/
 .table-card{
     width:95%;
-    margin: 16px auto;               
+    margin:16px auto;
     border:1px solid rgba(99,131,141,.35);
     border-radius:12px;
-    overflow:hidden;
     background:#fff;
     box-shadow:0 6px 16px rgba(0,0,0,.06);
+    overflow:hidden;
+}
+/*the wrap for the table tho */
+.table-wrap{
+    width:100%;
+    overflow-x:auto;                
 }
 .table-toolbar{
     display:flex; gap:8px; flex-wrap:wrap;
@@ -91,9 +96,10 @@ h2{
 
 /*employee main table*/
 #employee-table {
-    width: 95%;
-    margin: 20px;
+    width: max-content;
+    margin: 0px;
     border-collapse: collapse;
+    white-space: nowrap;
 }
 #employee-table thead th{
     background: rgb(99,131,141);
@@ -101,6 +107,9 @@ h2{
     text-align: left;
     padding: 12px 14px;
     letter-spacing: .2px;
+    position: sticky; 
+    top: 0; 
+    z-index: 1;
 }
 #employee-table tbody td{
     padding: 12px 14px;
