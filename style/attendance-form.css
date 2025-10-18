@@ -30,3 +30,14 @@ nav ul li a {
     color: rgb(255, 255, 255);
     font-size: 18px;
 }
+
+#attendance-form-container {
+    margin: 20% auto;
+    width: 500px;
+    padding: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgb(99, 131, 141);
+    color: rgb(245, 245, 245);
+    border-radius: 10px;
+}
