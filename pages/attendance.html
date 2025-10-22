@@ -26,11 +26,12 @@
   <aside class="sidebar" id="appSidebar">
     <div class="brand"><h3>5 Chickens</h3> <p>Admin/HR</p></div> <br>
     <nav class="menu">
-      <a href="employees.html" class="active">Employees</a>
-      <a href="#">Departments</a>
-      <a href="../pages/attendance.html">Attendance</a>
-      <a href="../pages/job-history.html">Job History</a>
-      <a href="#">Reports</a>
+        <a href="employees.html" class="active">Employees</a>
+        <a href="../pages/salary.html">Salary</a>
+        <a href="../pages/attendance.html">Attendance</a>
+        <a href="../pages/leave-request.html">Leave</a>
+        <a href="../pages/job-history.html">Job History</a>
+        <a href="#">Reports</a>
     </nav>
   </aside>
 
@@ -51,6 +52,18 @@
           <button>Excel</button>
           <button>CSV</button>
           <button>Print</button>
+        </div>
+
+        <div class="select-date" style="margin: 15px;">
+          <label for="attendance-date">From:</label>
+          <input type="date" id="attendance-date" name="attendance-date">
+
+          <label for="to-attendance-date">To:</label>
+          <input type="date" id="to-attendance-date" name="to-attendance-date">
+
+          <label for="employee-id">Employee ID:</label>
+          <input type="text" id="employee-id" name="employee-id" placeholder="Enter Employee ID">
+
         </div>
 
         <div class="table-wrap">
